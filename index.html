@@ -417,23 +417,66 @@ Os corrimãos de vidro para escadas oferecem uma combinação de estilo e segura
 
   <!-- end service section -->
 
-   <!-- Make sure you don't change the form action-->
-    <form action="https://api.staticforms.xyz/submit" method="post">
-        <!-- Replace with accesKey sent to your email -->
-        <input type="hidden" name="accessKey" value="5e742962-5aa7-4a5e-b422-8237da73b020"> <!-- Required -->
-        <input type="text" name="name"> <!-- Optional -->
-        <input type="text" name="subject"> <!-- Optional -->
-        <input type="text" name="email"> <!-- Optional -->
-        <input type="text" name="phone"> <!-- Optional -->
-        <textarea name="message"></textarea> <!-- Optional -->
-        <!-- If you want replyTo to be set to specific email -->
-        <input type="text" name="replyTo" value="myreplytoemail@example.com"> <!-- Optional -->
-        <!-- Specify @ as reply to value if you want it to be customers email -->
-        <input type="hidden" name="replyTo" value="@"> <!-- Optional -->
-        <!-- If you want form to redirect to a specific url after submission -->
-        <input type="hidden" name="redirectTo" value="https://example.com/contact/success"> <!-- Optional -->
-        <input type="submit" value="Submit" />
-    </form>
+    <!-- contact section -->
+  <section id="contato" class="contact_section ">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>Fale<span> Conosco</span></h2>
+      </div>
+      <div class="row">
+        <div class="col-md-6 px-0">
+          <div class="form_container">
+			<form action="https://api.staticforms.xyz/submit" method="post">
+				  <input type="text" name="honeypot" style="display: none;"> 
+			<input type="hidden" name="accessKey" value="5e742962-5aa7-4a5e-b422-8237da73b020"> <!-- Required -->
+              <div class="form-row">
+                <div class="form-group col">
+                  <input type="text" name="name" class="form-control" placeholder="Seu Nome" required /> 
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-lg-6">
+                  <input type="tel" name="phone" class="form-control" placeholder="Seu Telefone" required  />
+                </div>
+                <div class="form-group col-lg-6">
+                  <select name="$Servico" id="" class="form-control wide">
+                    <option value="">Escolha o serviço</option>
+                    <option value="Vidros">Vidros Comuns ou Temperados</option>
+                    <option value="Espelhos">Espelhos e Bisotados</option>
+                    <option value="Box">Box para Banheiro</option>
+					<option value="Corrimao">Corrimão de escadas</option>
+					<option value="Sacada">Sacadas em Inox ou Vidro</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col">
+                  <input type="email" name="email" class="form-control" placeholder="Seu Email" required />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col">
+                  <input type="text" name="message" class="message-box form-control" placeholder="Mensagem" required  />
+                </div>
+              </div>
+	<input type="hidden" name="redirectTo" value="https://example.com/contact/success">
+              <div class="btn_box" input type="submit" value="ENVIAR" name="enviar">
+ <button>ENVIAR</button> 
+              </div>
+            </form>
+	  </form>   
+          </div>
+        </div>
+        <div class="col-md-6 px-0">
+          <div class="map_container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15601.885365640592!2d-45.0002368!3d-12.1482805!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x934acb0d7f8456ff%3A0xba47f246c4a00006!2sVidra%C3%A7aria%20S%C3%A3o%20Francisco!5e0!3m2!1spt-BR!2sbr!4v1712826492040!5m2!1spt-BR!2sbr" width="600" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end contact section -->
 	
   <!-- client section -->
   <section class="client_section layout_padding">
